@@ -1,3 +1,2 @@
---only-binary :all: cffi
 mip
 qubots
