@@ -1,16 +1,23 @@
 {
     "entry_point": "mip_batch_optimizer:MIPBatchOptimizer",
     "default_params": {
-        "time_limit": 300
+        "time_limit": 5
     },
-    "optimizer_type": "MIP",
+    "creator": "Rastion",
+    "type": "optimizer",
+    "optimizer_name": "MIP batch scheduling optimizer",
     "description": "Mixed Integer Programming based batch scheduling optimizer using Python-MIP and the CBC solver.",
-    "compatible_problems": ["BatchScheduling"],
+    "compatible_problems": ["Rastion/batch_scheduling"],
     "parameters": {
         "time_limit": {
             "type": "int",
             "description": "Maximum optimization time in seconds"
         }
     },
-    "requirements": ["mip", "qubots"]
+    "requirements": ["mip", "qubots"],
+    "keywords": [
+      "exact",
+      "MIP",
+      "CBC"
+    ]
 }

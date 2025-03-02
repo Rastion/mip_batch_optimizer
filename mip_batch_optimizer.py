@@ -9,7 +9,7 @@ class MIPBatchOptimizer(BaseOptimizer):
     for tasks sharing the same resource via binary ordering variables, and handles 
     precedence constraints.
     """
-    def __init__(self, time_limit=300):
+    def __init__(self, time_limit=5):
         self.time_limit = time_limit
 
     def optimize(self, problem, initial_solution=None, **kwargs):
